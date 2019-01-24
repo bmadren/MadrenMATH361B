@@ -1,6 +1,6 @@
 # MadrenMATH361B
-bmadren@mail.umw.edu
+UMW email address: bmadren@mail.umw.edu
 
-Abstract Algebra
+Favorite math class: Abstract Algebra
 
-Cheesecake
+Favorite dessert: Cheesecake
