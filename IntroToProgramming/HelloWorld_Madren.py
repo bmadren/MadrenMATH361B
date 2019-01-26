@@ -5,5 +5,5 @@ Created on Fri Jan 25 22:33:53 2019
 @author: benma
 """
 
-str = "Hello World!"
-print(str)
+mesg = "Hello World!"
+print(mesg)
