@@ -5,4 +5,5 @@ Created on Fri Jan 25 22:33:53 2019
 @author: benma
 """
 
-print("Hello World!")
+str = "Hello World!"
+print(str)
