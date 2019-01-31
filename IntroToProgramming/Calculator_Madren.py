@@ -7,9 +7,9 @@ Created on Wed Jan 30 19:43:25 2019
 
 #%%
 #Input Variables
-x
-y
-z
+x = 1
+y = 2
+z = 3
 #List
 mylist = []
 mylist.append(x + y)
