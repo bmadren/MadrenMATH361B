@@ -13,11 +13,16 @@ z = 3
 #List
 mylist = []
 mylist.append(x + y)
-mylist.append(y * z + 3 * x)
-mylist.append(index(0)**2)
-mylist.append((2*index(1) - x/2)/index(0))
+mylist.append((y * z) + (3 * x))
+mylist.append(mylist[0]**2)
+mylist.append(((2*mylist[1]) - ((1/2)*x))/mylist[0])
 mylist.append(7 % 3)
-
-mylist.append(index(2) + 3, index(2))
-mylist.append(index(4) * (3/4), index(4))
-print("The sum of all components is ", sum(mylist))
+#Modify and sum
+mylist[2] = mylist[2] + 3
+mylist[4] = mylist[4] * (3/4)
+def added(mylist):
+    if len(mylist) == 1:
+        return mylist[0]
+    else:
+        return mylist[0] + added(mylist[1:])
+print("The sum of all components is ", added(mylist))
