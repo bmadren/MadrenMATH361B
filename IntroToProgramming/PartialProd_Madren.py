@@ -6,24 +6,36 @@ Created on Mon Feb  4 22:08:34 2019
 """
 
 #%%
-N = 30
-product=1
-products = []
-
-for nn in range(2,N+1):
-    product *= (nn**3 - 1)/(nn**3 + 1)
-    products.append(product)
+import numpy as np
+N = 50
+x = np.zeros([N])
+term = 1
+for nn in range(2, N):
+    term *= (nn**3 - 1)/(nn**3 + 1)
+    x[nn] = term
     
-print("The terms are ", products)
+print("The first 15 terms are ", x[:15], " and the last 15 terms are ", x[-15:])
 
 #%%
+import numpy as np
 from math import exp
-N = 30
-product=1
-products = []
-
-for nn in range(2,N+1):
-    product *= (exp(nn/100))/(nn**10)
-    products.append(product)
+N = 50
+x = np.zeros([N])
+term = 1
+for nn in range(1, N):
+    term *= (exp(nn/100))/(nn**10)
+    x[nn] = term
     
-print("The terms are ", products)
+print("The first 15 terms are ", x[:15], " and the last 15 terms are ", x[-15:])
+
+#%%
+import numpy as np
+from math import exp
+N = 50
+x = np.zeros([N])
+term = 1
+for nn in range(1, N):
+    term *= (exp(nn/10))/(nn**100)
+    x[nn] = term
+    
+print("The first 15 terms are ", x[:15], " and the last 15 terms are ", x[-15:])
